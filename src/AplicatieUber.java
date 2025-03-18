@@ -12,10 +12,10 @@ public class AplicatieUber {
         for (Sofer sofer : soferi) {
             if (sofer.isAvailable()) {
                 sofer.gestioneazaComanda(comanda);
-                System.out.println("Comanda a fost atribuită șoferului " + sofer.getName());
+                System.out.println("Comanda a fost atribuita soferului " + sofer.getName());
                 return;
             }
         }
-        System.out.println("Nu există șoferi disponibili în acest moment.");
+        System.out.println("Nu exista soferi disponibili in acest moment.");
     }
 }

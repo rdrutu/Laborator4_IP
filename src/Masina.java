@@ -3,7 +3,7 @@ public class Masina {
     private String culoare;
 
     public Masina(String model, String culoare) {
-        this.model = model;
+        this.Model = model;
         this.culoare = culoare;
     }
 }

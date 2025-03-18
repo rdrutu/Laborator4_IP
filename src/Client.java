@@ -18,9 +18,13 @@ public class Client {
         return phoneNumber;
     }
 
+    public Comanda getComanda() {
+        return comanda;
+    }
+
     public void plaseazaComanda(String pickup, String destination, int distance, int price) {
         this.comanda = new Comanda(pickup, destination, distance, price);
-        System.out.println("Comanda a fost plasată de " + name + " de la " + pickup + " la " + destination);
+        System.out.println("Comanda a fost plasata de " + name + " de la " + pickup + " la " + destination);
     }
 
 }
