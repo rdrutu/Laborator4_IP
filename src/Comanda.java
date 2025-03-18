@@ -1,15 +1,18 @@
 public class Comanda {
-    private Client client;
-    private Sofer[] soferi;
+    private int id;
     private String pickup;
     private String destination;
+    private int distance;
+    private int price;
 
-    public Comanda(Client client, Sofer[] soferi) {
-        this.client = client;
-        this.soferi = soferi;
+    Comanda(String pickup, String destination, int distance, int price) {
+        this.pickup = pickup;
+        this.destination = destination;
+        this.distance = distance;
+        this.price = price;
     }
 
-    public void creeazaCoamnda(){
-
+    public int getId() {
+        return id;
     }
 }

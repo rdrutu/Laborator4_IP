@@ -3,6 +3,7 @@ public class Sofer {
     private String phoneNumber;
     private Masina masina;
     private boolean status;
+    private Comanda comanda;
 
     public Sofer(String name, String phoneNumber, Masina masina, boolean status) {
         this.name = name;
