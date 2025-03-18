@@ -2,10 +2,13 @@ public class Sofer {
     private String name;
     private String phoneNumber;
     private Masina masina;
+    private boolean status;
 
-    public Sofer(String name, String phoneNumber) {
+    public Sofer(String name, String phoneNumber, Masina masina, boolean status) {
         this.name = name;
         this.phoneNumber = phoneNumber;
+        this.masina = masina;
+        this.status = status;
     }
 
     String getName() {

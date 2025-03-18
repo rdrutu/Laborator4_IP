@@ -6,4 +6,14 @@ public class Client {
         this.name = name;
         this.phoneNumber = phoneNumber;
     }
+
+    String getName() {
+        return name;
+    }
+
+    String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+
 }
