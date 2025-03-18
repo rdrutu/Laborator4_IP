@@ -12,11 +12,25 @@ public class Sofer {
         this.status = status;
     }
 
-    String getName() {
+    public String getName() {
         return name;
     }
 
-    String getPhoneNumber() {
+    public boolean isAvailable() {
+        return status;
+    }
+
+    public String getPhoneNumber() {
         return phoneNumber;
+    }
+
+    public void gestioneazaComanda(Comanda com) {
+        if (status) {
+            this.comanda = com;
+            this.status = false;
+            System.out.println("Soferul " + name + " a acceptat comanda");
+        } else {
+            System.out.println("Soferul " + name + " a respins cursa");
+        }
     }
 }

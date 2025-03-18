@@ -1,6 +1,9 @@
 public class Client {
     private String name;
     private String phoneNumber;
+    private Comanda comanda;
+    private String currentLocation;
+    private String destination;
 
     public Client(String name, String phoneNumber) {
         this.name = name;
@@ -13,6 +16,11 @@ public class Client {
 
     String getPhoneNumber() {
         return phoneNumber;
+    }
+
+    public void plaseazaComanda(String pickup, String destination, int distance, int price) {
+        this.comanda = new Comanda(pickup, destination, distance, price);
+        System.out.println("Comanda a fost plasată de " + name + " de la " + pickup + " la " + destination);
     }
 
 }
